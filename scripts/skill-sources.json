@@ -150,6 +150,16 @@
       "source_path": "skills/misc/migrate-to-shoehorn",
       "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
     },
+    "next-dev-loop": {
+      "commit": "783d8455227b1c4192835dd2fdebccd5cd5a7441",
+      "destination": "community/vercel/next-dev-loop",
+      "imported_at": "2026-08-05T14:57:58.304098+00:00",
+      "provider": "skills.sh",
+      "ref": null,
+      "repository": "vercel/next.js",
+      "source_path": "skills/next-dev-loop",
+      "source_url": "https://www.skills.sh/vercel/next.js/next-dev-loop"
+    },
     "prototype": {
       "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
       "destination": "community/matt-pocock/prototype",
