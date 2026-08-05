@@ -53,6 +53,10 @@ The picker MUST:
 - Render fixed-position, floating, default bottom-right corner.
 - Be draggable anywhere on screen using Framer Motion `drag` + `useMotionValue` (never React state for the position — animation rules forbid re-renders during drag).
 - Distinguish drag from click via a ~6px movement threshold so dragging doesn't accidentally open the menu.
+- **Trigger appearance and navigation:**
+  - The switcher trigger must always be exactly 200px wide. Do not allow the width to vary depending on the variant name/text. Style the trigger so its width is fixed, regardless of the content inside.
+  - On the left and right sides of the trigger, render clickable arrow buttons for previous and next variant. Clicking the left arrow selects the previous variant, clicking the right arrow selects the next.
+  - Support keyboard navigation: when the switcher is focused, pressing the left/right keyboard arrow keys should also step to the previous/next variant, wrapping around if needed.
 - Open a popup listing all variants with the active one marked. Click a variant → swap + close.
 - Persist to `localStorage`:
   - `<feature>.variant` — selected variant ID

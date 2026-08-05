@@ -8,15 +8,18 @@ disable-model-invocation: true
 
 ## Goal
 
-Comments explain **why**, **what is non-obvious**, and **what future-me would miss**. The code itself explains **what**. Names + types do the heavy lifting; comments fill the gaps.
+**Default to zero comments. You earn each one.** No comment is the resting state of a line — including the lines you just changed. Add one only when you have something real the code can't say: a why, a gotcha, an invariant, a non-obvious trade-off. If you're hunting for a reason to comment, that's the signal to stop.
+
+When a comment *is* earned it explains **why**, **what is non-obvious**, or **what future-me would miss**. The code explains **what**. Names + types do the heavy lifting; comments fill the *gaps* — and most code has no gap.
 
 ## Hard rules
 
-1. **Never narrate obvious code.** No `// Import the module`, `// Loop over items`, `// Return result`. If the line is self-evident from its identifiers, no comment.
+1. **Never narrate obvious code.** No `// Import the module`, `// Loop over items`, `// Return result`. If the line is self-evident from its identifiers, no comment. Changing a line is not a reason to comment it.
 2. **Why over what.** A comment must add context the reader can't get from reading the code: policy, gotcha, invariant, trade-off, history, link.
-3. **Em-dashes `—` not `--` or `:`** inside comments when joining clauses.
-4. **TODOs uppercase, own line**: `// TODO: handle expired tokens`. Never inline mid-sentence.
-5. **Improve as you go.** When editing a function, fix or add comments in the surrounding code if they're missing or stale. Don't leave a half-commented module.
+3. **No stacking, no drift.** One comment per thing, max — if two lines explain the same block, cut one. A comment sits on the *exact* line it describes; a note that floats above unrelated code (a `// Cast…` above a plain assignment) is worse than none.
+4. **Em-dashes `—` not `--` or `:`** inside comments when joining clauses.
+5. **TODOs uppercase, own line**: `// TODO: handle expired tokens`. Never inline mid-sentence.
+6. **Fix what's wrong, don't pad what's bare.** When editing, correct or delete stale/wrong comments you pass. Missing comments on otherwise-clear code are not a defect — leave them.
 
 ---
 
@@ -28,6 +31,7 @@ Use a header when:
 
 - The file is a shared cross-cutting module that callers from multiple transports/layers use (services, runners, contracts, shared types with discriminants).
 - There's a subtle execution-path contract worth stating up front.
+
 Format: short, declarative. 1 line of purpose + 1 short paragraph of context. No tags.
 
 ```ts
@@ -52,7 +56,7 @@ Format: short, declarative. 1 line of purpose + 1 short paragraph of context. No
 
 ## 2. Function JSDoc
 
-**Every exported function gets a JSDoc**, even if it's one line. Internal/private helpers don't need it unless the behavior is non-obvious.
+**Exported functions get a JSDoc when it adds something the signature doesn't** — a why, a contract, an auth/trust boundary, non-obvious behavior. Skip it when the name + types already say everything; a one-line JSDoc that just restates the function name is noise, not documentation. Internal/private helpers only when the behavior is non-obvious.
 
 - Keep it terse — one sentence is usually enough.
 - Use multi-line only when there's a non-obvious invariant or auth/trust boundary worth flagging.
@@ -83,7 +87,7 @@ function mapLoadFailureStatus(code: StartPublishedWorkflowRunFailure['code']) { 
 
 ## 3. Type / interface JSDoc
 
-**Every exported type / interface gets a JSDoc.** Even one line. This applies to everything in `lib/types/**` and any types exported from feature modules.
+**Exported types / interfaces get a one-line JSDoc when the name isn't fully self-explanatory** — the discriminant, the unit, the "when is this used." Skip it when the name says everything. Types are read often and churn rarely, so lean slightly toward documenting them, but don't restate the name.
 
 ```ts
 /** How a workflow run request was authenticated. */
@@ -123,7 +127,7 @@ Typical section names: `HOOKS`, `STATE`, `EVENT HANDLING`, `EFFECTS`, `MESSAGE O
 
 ## 5. Numbered step comments
 
-**Use these liberally** in any function that runs a sequence of distinct steps — routes, orchestrators, runners, multi-stage handlers. They make flow scannable and double as a table of contents.
+Use these in genuinely multi-phase functions — routes, orchestrators, runners with 3+ distinct stages. They make a long flow scannable and double as a table of contents. Skip them on short functions; a 2-step flow doesn't need a map.
 
 Two acceptable formats:
 
@@ -229,7 +233,7 @@ Format: multi-line `//` comment, starts with `// NOTE:`, immediately before the 
 setMessages((prevMessages) => { ... })
 ```
 
-Use NOTE liberally for:
+Reach for NOTE when there's a real footgun — not routinely:
 
 - React/Next.js footguns (StrictMode, RSC boundaries, hydration, stale closures).
 - Supabase RLS and auth-context gotchas.
@@ -259,11 +263,10 @@ Never inline mid-sentence, never lowercase, never `FIXME`/`XXX`/`HACK` — use T
 
 When editing a file:
 
-- If surrounding logic is missing comments and is non-trivial, add them while you're there.
-- If an existing comment is stale or wrong, fix it.
-- If an exported function/type has no JSDoc, add one.
-- Don't refactor unrelated code or rename anything — only add/fix comments.
-- Don't bulk-comment uncommented files unless the user asks.
+- Fix or delete stale/wrong comments you touch — a wrong comment is worse than none.
+- Don't add comments to lines you're only lightly touching — editing a line is not a reason to comment it.
+- Leave clear, un-commented code alone. No "while I'm here" comments, no bulk-commenting.
+- Don't refactor or rename — only fix comments that are actually wrong.
 
 ---
 
@@ -280,12 +283,11 @@ When editing a file:
 
 ## Quick checklist before committing
 
-- [ ] All exported functions have JSDoc (1 line is fine).
-- [ ] All exported types have JSDoc.
-- [ ] No `// what the code obviously does` narration.
-- [ ] Why-comments wherever a non-obvious decision was made.
-- [ ] NOTE blocks on every framework footgun / anti-pattern warning.
-- [ ] Numbered steps in multi-phase routes/orchestrators.
+- [ ] Deleted every comment you didn't *earn* — narration, restated names, drifted/misplaced notes.
+- [ ] No comment stacked on another explaining the same block.
+- [ ] Each remaining comment says something the code can't (why / gotcha / invariant).
+- [ ] Each comment sits on the exact line it describes.
+- [ ] Exported functions/types have JSDoc only where it adds beyond the signature.
+- [ ] NOTE blocks only on real footguns; numbered steps only in 3+ phase flows.
 - [ ] Section dividers only if the file is large and mixes concerns.
-- [ ] TODOs uppercase, own line.
-- [ ] Em-dashes, not `--`.
+- [ ] TODOs uppercase own line; em-dashes not `--`.

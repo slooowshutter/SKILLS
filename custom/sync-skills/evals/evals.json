@@ -1,0 +1,41 @@
+{
+  "skill_name": "sync-skills",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I added a new skill to my central skills repo. Sync everything for Codex, Claude Code, and OpenCode.",
+      "expected_output": "Runs the one repository sync command and reports that a new conversation is needed, not a Conductor restart.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I deleted two skills from /Users/marclamy/Documents/Code/skills. Rebuild my installed skills so those deleted ones are gone everywhere.",
+      "expected_output": "Runs the clean rebuild command, allowing repository deletions to remove globally installed personal skills.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Refresh all my agent skills. Do I need to restart Conductor afterwards?",
+      "expected_output": "Runs the sync command and explains that a fresh conversation is sufficient; Conductor does not need to restart.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Install cool-skill from https://skills.sh/example/tools/cool-skill and sync it everywhere.",
+      "expected_output": "Adds 'cool-skill | https://skills.sh/example/tools/cool-skill' to skill-inbox.txt, runs the single sync command, and does not manually copy only SKILL.md.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Here is an example skill URL so we can discuss the format: https://github.com/example/skills/tree/main/skills. Do not install it.",
+      "expected_output": "Does not add anything to skill-inbox.txt and does not run an installation merely because an example URL was provided.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Import this complete collection: https://github.com/example/skills/tree/main/skills",
+      "expected_output": "Adds the URL-only collection entry to skill-inbox.txt and runs the one sync command, causing every valid skill folder in the collection to be imported.",
+      "files": []
+    }
+  ]
+}

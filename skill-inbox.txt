@@ -1,0 +1,3 @@
+# Single skill: skill-name | URL
+# Collection: paste its GitHub URL, or use collection-name | URL
+# Blank lines and lines beginning with # are ignored.

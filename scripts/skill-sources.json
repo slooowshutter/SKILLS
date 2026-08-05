@@ -1,0 +1,355 @@
+{
+  "skills": {
+    "ask-matt": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/ask-matt",
+      "imported_at": "2026-08-05T10:27:30.347081+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/ask-matt",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "claude-handoff": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/claude-handoff",
+      "imported_at": "2026-08-05T10:27:30.348151+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/in-progress/claude-handoff",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "code-review": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/code-review",
+      "imported_at": "2026-08-05T10:27:30.349107+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/code-review",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "codebase-design": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/codebase-design",
+      "imported_at": "2026-08-05T10:27:30.350218+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/codebase-design",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "diagnosing-bugs": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/diagnosing-bugs",
+      "imported_at": "2026-08-05T10:27:30.351193+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/diagnosing-bugs",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "domain-modeling": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/domain-modeling",
+      "imported_at": "2026-08-05T10:27:30.352217+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/domain-modeling",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "git-guardrails-claude-code": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/git-guardrails-claude-code",
+      "imported_at": "2026-08-05T10:27:30.353182+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/misc/git-guardrails-claude-code",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "grill-me": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/grill-me",
+      "imported_at": "2026-08-05T10:27:30.353948+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/productivity/grill-me",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "grill-with-docs": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/grill-with-docs",
+      "imported_at": "2026-08-05T10:27:30.354659+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/grill-with-docs",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "grilling": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/grilling",
+      "imported_at": "2026-08-05T10:27:30.355425+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/productivity/grilling",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "handoff": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/handoff",
+      "imported_at": "2026-08-05T10:27:30.356141+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/productivity/handoff",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "implement": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/implement",
+      "imported_at": "2026-08-05T10:27:30.356789+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/implement",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "improve-codebase-architecture": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/improve-codebase-architecture",
+      "imported_at": "2026-08-05T10:27:30.357957+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/improve-codebase-architecture",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "loop-me": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/loop-me",
+      "imported_at": "2026-08-05T10:27:30.358653+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/in-progress/loop-me",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "migrate-to-shoehorn": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/migrate-to-shoehorn",
+      "imported_at": "2026-08-05T10:27:30.359333+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/misc/migrate-to-shoehorn",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "prototype": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/prototype",
+      "imported_at": "2026-08-05T10:27:30.360611+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/prototype",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "research": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/research",
+      "imported_at": "2026-08-05T10:27:30.361233+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/research",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "resolving-merge-conflicts": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/resolving-merge-conflicts",
+      "imported_at": "2026-08-05T10:27:30.361969+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/resolving-merge-conflicts",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "scaffold-exercises": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/scaffold-exercises",
+      "imported_at": "2026-08-05T10:27:30.362752+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/misc/scaffold-exercises",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "setup-matt-pocock-skills": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/setup-matt-pocock-skills",
+      "imported_at": "2026-08-05T10:27:30.364380+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/setup-matt-pocock-skills",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "setup-pre-commit": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/setup-pre-commit",
+      "imported_at": "2026-08-05T10:27:30.365287+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/misc/setup-pre-commit",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "setup-ts-deep-modules": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/setup-ts-deep-modules",
+      "imported_at": "2026-08-05T10:27:30.366476+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/in-progress/setup-ts-deep-modules",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "tdd": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/tdd",
+      "imported_at": "2026-08-05T10:27:30.367723+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/tdd",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "teach": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/teach",
+      "imported_at": "2026-08-05T10:27:30.369335+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/productivity/teach",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "to-questionnaire": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/to-questionnaire",
+      "imported_at": "2026-08-05T10:27:30.370128+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/productivity/to-questionnaire",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "to-spec": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/to-spec",
+      "imported_at": "2026-08-05T10:27:30.370830+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/to-spec",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "to-tickets": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/to-tickets",
+      "imported_at": "2026-08-05T10:27:30.371810+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/to-tickets",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "triage": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/triage",
+      "imported_at": "2026-08-05T10:27:30.373107+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/triage",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "wait-what": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/wait-what",
+      "imported_at": "2026-08-05T10:27:30.373929+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/productivity/wait-what",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "wayfinder": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/wayfinder",
+      "imported_at": "2026-08-05T10:27:30.374799+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/wayfinder",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "wizard": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/wizard",
+      "imported_at": "2026-08-05T10:27:30.375790+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/engineering/wizard",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "writing-beats": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/writing-beats",
+      "imported_at": "2026-08-05T10:27:30.376777+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/in-progress/writing-beats",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "writing-for-agents": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/writing-for-agents",
+      "imported_at": "2026-08-05T10:27:30.377951+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/productivity/writing-for-agents",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "writing-fragments": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/writing-fragments",
+      "imported_at": "2026-08-05T10:27:30.378789+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/in-progress/writing-fragments",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "writing-shape": {
+      "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
+      "destination": "community/matt-pocock/writing-shape",
+      "imported_at": "2026-08-05T10:27:30.379931+00:00",
+      "provider": "github",
+      "ref": "main",
+      "repository": "mattpocock/skills",
+      "source_path": "skills/in-progress/writing-shape",
+      "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    }
+  },
+  "version": 1
+}
