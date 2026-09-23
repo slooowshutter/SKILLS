@@ -452,15 +452,29 @@ def atomic_write(path: Path, content: str) -> None:
             temporary.unlink()
 
 
+def manifest_skill_key(manifest: dict, source: SourceSpec, name: str) -> str:
+    """Keep imports with the same declared name from different repos distinct."""
+    skills = manifest["skills"]
+    existing = skills.get(name)
+    if existing is None or existing.get("repository") == source.github_repository:
+        return name
+
+    scoped = f"{source.github_repository}/{name}"
+    existing = skills.get(scoped)
+    if existing is not None and existing.get("repository") != source.github_repository:
+        raise ImportError(f"Manifest key '{scoped}' belongs to another repository")
+    return scoped
+
+
 def relative_manifest_destination(
     repo_root: Path,
     community_root: Path,
-    source: SourceSpec,
     resolved: ResolvedSkill,
     manifest: dict,
     group_name: str,
+    manifest_key: str,
 ) -> Path:
-    previous = manifest["skills"].get(resolved.name)
+    previous = manifest["skills"].get(manifest_key)
     if previous:
         relative = Path(previous.get("destination", ""))
         if not relative.parts:
@@ -546,15 +560,18 @@ def import_entry(
     failures: list[str] = []
     for resolved in resolved_skills:
         try:
+            manifest_key = manifest_skill_key(manifest, source, resolved.name)
             relative_destination = relative_manifest_destination(
                 repo_root,
                 community_root,
-                source,
                 resolved,
                 manifest,
                 group_name,
+                manifest_key,
             )
             destination = repo_root / relative_destination
+            if manifest_key not in manifest["skills"] and os.path.lexists(destination):
+                raise ImportError(f"Untracked destination already exists: {destination}")
             install_skill_directory(resolved.directory, destination)
             installed_name, _ = parse_frontmatter(destination / "SKILL.md")
             if installed_name != resolved.name:
@@ -565,7 +582,7 @@ def import_entry(
             failures.append(f"{resolved.name}: {error}")
             continue
 
-        manifest["skills"][resolved.name] = {
+        manifest["skills"][manifest_key] = {
             "source_url": entry.url,
             "provider": source.provider,
             "repository": source.github_repository,

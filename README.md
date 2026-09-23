@@ -125,7 +125,8 @@ Make the change directly under `custom/`, then run the one command.
 The repository always wins. If a skill no longer exists here, the next run
 removes it from the global personal installation. If two folders declare the
 same skill name, `custom/` wins over `community/`; the command prints the source
-it selected.
+it selected. If two community sources share a name, both folders and source
+records are kept; the alphabetically first path is installed.
 
 ## What synchronization replaces
 

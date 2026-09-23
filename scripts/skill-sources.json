@@ -1,5 +1,45 @@
 {
   "skills": {
+    "animate": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/animate",
+      "imported_at": "2026-09-23T16:03:20.847904+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/animate",
+      "source_url": "https://github.com/emilkowalski/skills"
+    },
+    "animate-expo": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/animate-expo",
+      "imported_at": "2026-09-23T16:03:20.848929+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/animate-expo",
+      "source_url": "https://github.com/emilkowalski/skills"
+    },
+    "animation-vocabulary": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/animation-vocabulary",
+      "imported_at": "2026-09-23T16:03:20.849458+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/animation-vocabulary",
+      "source_url": "https://github.com/emilkowalski/skills"
+    },
+    "apple-design": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/apple-design",
+      "imported_at": "2026-09-23T16:03:20.849947+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/apple-design",
+      "source_url": "https://github.com/emilkowalski/skills"
+    },
     "ask-matt": {
       "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
       "destination": "community/matt-pocock/ask-matt",
@@ -9,6 +49,16 @@
       "repository": "mattpocock/skills",
       "source_path": "skills/engineering/ask-matt",
       "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "ask-sonner": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/ask-sonner",
+      "imported_at": "2026-09-23T16:03:20.850503+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/ask-sonner",
+      "source_url": "https://github.com/emilkowalski/skills"
     },
     "claude-handoff": {
       "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
@@ -59,6 +109,36 @@
       "repository": "mattpocock/skills",
       "source_path": "skills/engineering/domain-modeling",
       "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "emil-design-eng": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/emil-design-eng",
+      "imported_at": "2026-09-23T16:03:20.850928+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/emil-design-eng",
+      "source_url": "https://github.com/emilkowalski/skills"
+    },
+    "emilkowalski/skills/prototype": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/prototype",
+      "imported_at": "2026-09-23T16:03:20.853575+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/prototype",
+      "source_url": "https://github.com/emilkowalski/skills"
+    },
+    "find-animation-opportunities": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/find-animation-opportunities",
+      "imported_at": "2026-09-23T16:03:20.851349+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/find-animation-opportunities",
+      "source_url": "https://github.com/emilkowalski/skills"
     },
     "git-guardrails-claude-code": {
       "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
@@ -120,6 +200,16 @@
       "source_path": "skills/engineering/implement",
       "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
     },
+    "improve-animations": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/improve-animations",
+      "imported_at": "2026-09-23T16:03:20.852048+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/improve-animations",
+      "source_url": "https://github.com/emilkowalski/skills"
+    },
     "improve-codebase-architecture": {
       "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
       "destination": "community/matt-pocock/improve-codebase-architecture",
@@ -150,6 +240,16 @@
       "source_path": "skills/misc/migrate-to-shoehorn",
       "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
     },
+    "mobile-native": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/mobile-native",
+      "imported_at": "2026-09-23T16:03:20.852500+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/mobile-native",
+      "source_url": "https://github.com/emilkowalski/skills"
+    },
     "next-dev-loop": {
       "commit": "783d8455227b1c4192835dd2fdebccd5cd5a7441",
       "destination": "community/vercel/next-dev-loop",
@@ -159,6 +259,16 @@
       "repository": "vercel/next.js",
       "source_path": "skills/next-dev-loop",
       "source_url": "https://www.skills.sh/vercel/next.js/next-dev-loop"
+    },
+    "pick-ui-library": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/pick-ui-library",
+      "imported_at": "2026-09-23T16:03:20.852950+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/pick-ui-library",
+      "source_url": "https://github.com/emilkowalski/skills"
     },
     "prototype": {
       "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
@@ -189,6 +299,16 @@
       "repository": "mattpocock/skills",
       "source_path": "skills/engineering/resolving-merge-conflicts",
       "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "review-animations": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/review-animations",
+      "imported_at": "2026-09-23T16:03:20.854267+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/review-animations",
+      "source_url": "https://github.com/emilkowalski/skills"
     },
     "scaffold-exercises": {
       "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
@@ -319,6 +439,16 @@
       "repository": "mattpocock/skills",
       "source_path": "skills/engineering/wizard",
       "source_url": "https://github.com/mattpocock/skills/tree/main/skills"
+    },
+    "write-swift": {
+      "commit": "85e8e2363b713506e1d5b6e07a0eb2da66be1bc3",
+      "destination": "community/emilkowalski/write-swift",
+      "imported_at": "2026-09-23T16:03:20.854738+00:00",
+      "provider": "github",
+      "ref": null,
+      "repository": "emilkowalski/skills",
+      "source_path": "skills/write-swift",
+      "source_url": "https://github.com/emilkowalski/skills"
     },
     "writing-beats": {
       "commit": "c64fa7ecf658dc2a507a9192c7c6da61dc4d5960",
